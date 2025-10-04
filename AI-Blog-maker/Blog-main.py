@@ -4,7 +4,7 @@ client = genai.Client()
 def generate_blog_post(paragraph_topic):
     response = client.models.generate_content(
         model = "gemini-2.5-flash", 
-        contents=  "Write a detailed blog post about the following topic in about 100 words : " + paragraph_topic,
+        contents=  "Write a detailed blog post about the following topic in about 100 words and give some statistics about it if the topic requires so : " + paragraph_topic,
     )
     retrieve_blog = response.text
     return retrieve_blog
