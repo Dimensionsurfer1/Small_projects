@@ -1,0 +1,1 @@
+print('This is the checking file for the registry package.')
